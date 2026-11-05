@@ -1,0 +1,18 @@
+services:
+  backend-experto:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: tea_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      #Replica el codigo de la carpeta /app del equipo al contenedor
+      - ./backend/app:/app/app
+      #Replica el codigo de la carpeta /prolog del equipo al contendero
+      - ./prolog:/app/prolog
+    environment:
+      #Crea una variable para indicar la ubicacion de swi-prolog dentro del contenedor
+      - SWI_HOME_DIR=/usr/lib/swi-prolog
+    restart: unless-stopped
+

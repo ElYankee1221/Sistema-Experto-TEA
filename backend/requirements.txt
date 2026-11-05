@@ -1,0 +1,5 @@
+fastapi==0.104.1
+uvicorn==0.24.0
+pyswip==0.3.2
+pydantic==2.5.2
+#posteriormente se agregara la libreria para conecta con el LLM
