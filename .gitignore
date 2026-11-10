@@ -1,0 +1,15 @@
+
+# Archivos compilados y cache de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Variables de entorno o llaves de API secretas
+.env
+
+# Cache de pruebas automatizadas (pytest)
+.pytest_cache/
+
+# Archivos de configuracion local del edito
+.vscode/
+.idea/
